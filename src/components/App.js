@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   handleClick = flag => {
-    state.selectedFlagURL = flag
+    this.setState({selectedFlagURL: flag})
   }
 
   getFlagURL = name => {
@@ -19,25 +19,28 @@ class App extends Component {
   }
 
   renderStateCards = () => {
-    stateNames.map(name => {
-      <StateCard name={name} flag={this.getFlagURL(name)} handleClick={this.handleClick} />
+    return stateNames.map(name => {
+      return <StateCard name={name} flag={this.getFlagURL(name)} handleClick={this.handleClick} />
     })
   }
 
-  return (
-    <div className="App">
+  render() {
+    return (
+      <div className="App">
 
-      <img id="selected-flag-display" src={state.selectedFlagURL} alt={"Flags of the US"} />
+      <img id="selected-flag-display" src={this.state.selectedFlagURL} alt={"Flags of the US"} />
 
       <h1>Flags of the United States</h1>
 
       <div id="states-container">
-        {this.renderStateCards}
+      {this.renderStateCards()}
       </div>
 
 
-    </div>
-  );
+      </div>
+    );
+  }
+
 
 }
 
