@@ -10,7 +10,7 @@ Look over the code before you begin. Try to understand intentions behind the cod
 
 ## Intended Functionality
 
-When the page loads, you should see a header, a background image of the US flag, and a listing of all the flags for states and territories in a grid.
+When the page loads, you should see a header, a background image of the US flag, and listings of all the flags for US states and territories.
 
 When a state or territory gets clicked, the flag URL in the App state gets replaced which causes the background flag to also be replaced.
 
