@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+#states-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 3em;
+}
+
+.state-card img {
+  width: 50px;
+}
+
+#selected-flag-display {
+  left: 10vw;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  width: 80vw;
+  z-index: -1;
+}
