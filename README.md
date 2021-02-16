@@ -16,7 +16,7 @@ When a state or territory gets clicked, the flag URL in the App state gets repla
 
 ## Tips and Tricks
 
-Pay attention to the difference between class components functional components.
+Pay attention to the difference between class and functional components.
 
 Read the error messages! React has great error messaging so take advantage of it.
 
